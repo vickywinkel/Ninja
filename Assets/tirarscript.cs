@@ -17,11 +17,10 @@ public class tirarscript : MonoBehaviour
     private int Zmax = 8;
 
 
-
-
     public Vector3 newPosition; //cordenadas prueba para instanciar 
 
 
+    float freq = 4;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +31,10 @@ public class tirarscript : MonoBehaviour
         }
 
 
-        GenerarRandom();
+        GenerarRandom(); //funcion
+
+
+        
 
     }
 
@@ -42,7 +44,8 @@ public class tirarscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        InvokeRepeating(nameof(GenerarRandom), 0, freq); 
+
     }
 
     void GenerarRandom() //funcion para q aparezca un objeto random
@@ -53,7 +56,7 @@ public class tirarscript : MonoBehaviour
 
         float randomX = Random.Range(Xmix, Xmax); // genero random una posicion en X donde quiero que se genere
         float randomz = Random.Range(Zmix, Zmax);// genero random una posicion en Z donde quiero que se genere
-        newPosition = new Vector3(randomX, 0, randomz); // creo la posicion donde se va a generar con un random X y un random Z
+        newPosition = new Vector3(randomX, 5, randomz); // creo la posicion donde se va a generar con un random X y un random Z
 
         
         GameObject clon =  Instantiate(comidaAzar, newPosition, Quaternion.identity); // instanto el prefab
