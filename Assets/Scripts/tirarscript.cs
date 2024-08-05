@@ -13,8 +13,8 @@ public class tirarscript : MonoBehaviour
     private int Xmax = 7;
 
 
-    private int Zmix = 4;
-    private int Zmax = 8;
+    private int Zmix = -1;
+    private int Zmax = 0;
 
 
     public Vector3 newPosition; //cordenadas prueba para instanciar 
