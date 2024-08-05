@@ -33,7 +33,6 @@ public class tirarscript : MonoBehaviour
         }
 
 
-        GenerarRandom(); //funcion
         InvokeRepeating(nameof(GenerarRandom), 0, freq);
 
     }
@@ -56,7 +55,7 @@ public class tirarscript : MonoBehaviour
 
         float randomX = Random.Range(Xmix, Xmax); // genero random una posicion en X donde quiero que se genere
         float randomz = Random.Range(Zmix, Zmax);// genero random una posicion en Z donde quiero que se genere
-        newPosition = new Vector3(randomX, 0.3f, randomz); // creo la posicion donde se va a generar con un random X y un random Z
+        newPosition = new Vector3(randomX, 1, randomz); // creo la posicion donde se va a generar con un random X y un random Z
 
 
         GameObject clon = Instantiate(comidaAzar, newPosition, Quaternion.identity); // instanto el prefab
@@ -72,12 +71,4 @@ public class tirarscript : MonoBehaviour
         }
     }
 
-    void DestroyGB()
-    {
-        //if (collision.gameObject.tag == "Player")
-        //{
-        //  Destroy(collision.gameObject);
-
-        //}
-    }
 }
