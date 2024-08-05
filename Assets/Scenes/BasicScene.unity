@@ -352,6 +352,7 @@ MonoBehaviour:
   - {fileID: 3362142512010038731, guid: 222a32ef9fcf35f4aa3e3256d08b60d8, type: 3}
   comidaAzar: {fileID: 0}
   newPosition: {x: 0, y: 0, z: 0}
+  thrust: 15
 --- !u!4 &470295686
 Transform:
   m_ObjectHideFlags: 0
@@ -428,7 +429,7 @@ GameObject:
   - component: {fileID: 1249617922}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

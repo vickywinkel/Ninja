@@ -9,8 +9,8 @@ public class tirarscript : MonoBehaviour
 
 
 
-    private int Xmix = -3;
-    private int Xmax = 3;
+    private int Xmix = -7;
+    private int Xmax = 7;
 
 
     private int Zmix = 4;
@@ -22,19 +22,19 @@ public class tirarscript : MonoBehaviour
 
     float freq = 4;
 
+    public float thrust = 15.0f;
+
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < comidas.Length; i++) //desactiva todos los objetos del array
         {
-            comidas[i].SetActive(false); 
+            comidas[i].SetActive(false);
         }
 
 
         GenerarRandom(); //funcion
-
-
-        
+        InvokeRepeating(nameof(GenerarRandom), 0, freq);
 
     }
 
@@ -44,7 +44,7 @@ public class tirarscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InvokeRepeating(nameof(GenerarRandom), 0, freq); 
+
 
     }
 
@@ -56,13 +56,28 @@ public class tirarscript : MonoBehaviour
 
         float randomX = Random.Range(Xmix, Xmax); // genero random una posicion en X donde quiero que se genere
         float randomz = Random.Range(Zmix, Zmax);// genero random una posicion en Z donde quiero que se genere
-        newPosition = new Vector3(randomX, 5, randomz); // creo la posicion donde se va a generar con un random X y un random Z
+        newPosition = new Vector3(randomX, 0.3f, randomz); // creo la posicion donde se va a generar con un random X y un random Z
 
-        
-        GameObject clon =  Instantiate(comidaAzar, newPosition, Quaternion.identity); // instanto el prefab
+
+        GameObject clon = Instantiate(comidaAzar, newPosition, Quaternion.identity); // instanto el prefab
         clon.SetActive(true);
 
+        //clon.transform.position = newPosition;   
+        Rigidbody rb = clon.GetComponent<Rigidbody>(); // Obtener el Rigidbody del objeto instanciado
+        if (rb != null)
+        {
+            // Aplicar fuerza al Rigidbody
+            rb.AddForce(thrust * Vector3.up, ForceMode.Impulse);
+            Debug.Log($"Fuerza aplicada al objeto {clon.name}: {Vector3.up * thrust}");
+        }
     }
 
-    
+    void DestroyGB()
+    {
+        //if (collision.gameObject.tag == "Player")
+        //{
+        //  Destroy(collision.gameObject);
+
+        //}
+    }
 }
