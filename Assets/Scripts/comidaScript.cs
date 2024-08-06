@@ -24,6 +24,7 @@ public class comida : MonoBehaviour
         if (collision.gameObject.tag == "piso")
         {
             Destroy(gameObject);
+            Debug.Log("pisoo"); 
         }
         // Comprueba que la colisión es con el objeto deseado (puedes especificar el tag del objeto)
         if (collision.gameObject.tag == "GameControlle")

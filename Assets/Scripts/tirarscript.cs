@@ -9,12 +9,12 @@ public class tirarscript : MonoBehaviour
 
 
 
-    private int Xmix = -7;
-    private int Xmax = 7;
+    private float Xmix = -1.31f;
+    private float Xmax = 1.31f;
 
 
-    private int Zmix = -1;
-    private int Zmax = 0;
+    private float Zmix = 0.5f;
+    private float Zmax = 1.11f;
 
 
     public Vector3 newPosition; //cordenadas prueba para instanciar 
@@ -55,7 +55,7 @@ public class tirarscript : MonoBehaviour
 
         float randomX = Random.Range(Xmix, Xmax); // genero random una posicion en X donde quiero que se genere
         float randomz = Random.Range(Zmix, Zmax);// genero random una posicion en Z donde quiero que se genere
-        newPosition = new Vector3(randomX, 1, randomz); // creo la posicion donde se va a generar con un random X y un random Z
+        newPosition = new Vector3(randomX, 1.5f, randomz); // creo la posicion donde se va a generar con un random X y un random Z
 
 
         GameObject clon = Instantiate(comidaAzar, newPosition, Quaternion.identity); // instanto el prefab
@@ -67,7 +67,6 @@ public class tirarscript : MonoBehaviour
         {
             // Aplicar fuerza al Rigidbody
             rb.AddForce(thrust * Vector3.up, ForceMode.Impulse);
-            Debug.Log($"Fuerza aplicada al objeto {clon.name}: {Vector3.up * thrust}");
         }
     }
 
