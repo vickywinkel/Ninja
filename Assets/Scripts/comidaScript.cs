@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class comida : MonoBehaviour
 {
-    public GameObject mitad1;
-    public GameObject mitad2;
+    public GameObject mitades;
+    public GameObject entera;
     
     public int puntajeC; 
     
@@ -18,7 +18,10 @@ public class comida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CortarFruta();
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -27,20 +30,19 @@ public class comida : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("pisoo"); 
         }
-        // Comprueba que la colisión es con el objeto deseado (puedes especificar el tag del objeto)
+        // Comprueba que la colisión es con el objeto deseado 
         if (collision.gameObject.tag == "GameController")
         {
             Debug.Log("collision");
-            // Obtener la posición y rotación del objeto actual
-            Vector3 position = transform.position;
-            Quaternion rotation = transform.rotation;
-
-            // Instanciar los nuevos objetos en la posición del objeto original
-            Instantiate(mitad1, position, rotation);
-            Instantiate(mitad2, position, rotation);
-
-            // Destruir el objeto original
-            Destroy(gameObject);
+            CortarFruta();
         }
+    }
+
+
+    void CortarFruta()
+    {
+        //Se desactiva la fruta entera y se activan las mitades
+        entera.SetActive(false);
+        mitades.SetActive(true);
     }
 }
