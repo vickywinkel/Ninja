@@ -460,7 +460,8 @@ MonoBehaviour:
   - {fileID: 3362142512010038731, guid: 222a32ef9fcf35f4aa3e3256d08b60d8, type: 3}
   comidaAzar: {fileID: 0}
   newPosition: {x: 0, y: 0, z: 0}
-  thrust: 15
+  thrust: 8
+  fuerza: 3
 --- !u!4 &470295686
 Transform:
   m_ObjectHideFlags: 0

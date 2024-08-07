@@ -7,6 +7,7 @@ public class comida : MonoBehaviour
     public GameObject mitad1;
     public GameObject mitad2;
     
+    public int puntajeC; 
     
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class comida : MonoBehaviour
             Debug.Log("pisoo"); 
         }
         // Comprueba que la colisión es con el objeto deseado (puedes especificar el tag del objeto)
-        if (collision.gameObject.tag == "GameControlle")
+        if (collision.gameObject.tag == "GameController")
         {
             Debug.Log("collision");
             // Obtener la posición y rotación del objeto actual

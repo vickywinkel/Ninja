@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitad1: {fileID: 300622506293173730, guid: 234599d82e813e44ca2c822625ce5920, type: 3}
   mitad2: {fileID: 262392059833128803, guid: 5a37924870c83af48882068dac13cedf, type: 3}
+  puntajeC: 10

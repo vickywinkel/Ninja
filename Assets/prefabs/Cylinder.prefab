@@ -150,3 +150,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitad1: {fileID: 0}
   mitad2: {fileID: 0}
+  puntajeC: 5

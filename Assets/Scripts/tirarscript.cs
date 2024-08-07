@@ -13,8 +13,8 @@ public class tirarscript : MonoBehaviour
     private float Xmax = 1.31f;
 
 
-    private float Zmix = 0.5f;
-    private float Zmax = 1.11f;
+    private float Zmix = 5;
+    private float Zmax = 6;
 
 
     public Vector3 newPosition; //cordenadas prueba para instanciar 
@@ -22,7 +22,8 @@ public class tirarscript : MonoBehaviour
 
     float freq = 4;
 
-    public float thrust = 15.0f;
+    public float thrust = 8;
+    public float fuerza = 3; 
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +67,8 @@ public class tirarscript : MonoBehaviour
         if (rb != null)
         {
             // Aplicar fuerza al Rigidbody
-            rb.AddForce(thrust * Vector3.up, ForceMode.Impulse);
+            rb.AddForce(thrust * Vector3.up, ForceMode.Impulse); // impulso el objeto hacia arriba
+            rb.AddForce(fuerza * Vector3.back, ForceMode.Impulse); // impuso el objeto hacia atras, hacia donde estoy yo
         }
     }
 
