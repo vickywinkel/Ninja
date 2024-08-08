@@ -63,7 +63,7 @@ public class tirarscript : MonoBehaviour
         clon.SetActive(true);
 
         //clon.transform.position = newPosition;   
-        Rigidbody rb = clon.GetComponent<Rigidbody>(); // Obtener el Rigidbody del objeto instanciado
+        Rigidbody rb = clon.GetComponentInChildren<Rigidbody>(); // Obtener el Rigidbody del objeto instanciado
         if (rb != null)
         {
             // Aplicar fuerza al Rigidbody
