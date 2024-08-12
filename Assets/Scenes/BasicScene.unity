@@ -561,8 +561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comidas:
   - {fileID: 8251433052648284495, guid: 7eaddec93737a904aa947d30b22203ed, type: 3}
-  - {fileID: 7983772444883009845, guid: d138e33bdafb9224e9dfd0d65f51f361, type: 3}
-  - {fileID: 7129034613488326668, guid: 91cb6a18b7d18fa499da7c5cf397c449, type: 3}
+  - {fileID: 8251433052648284495, guid: 7eaddec93737a904aa947d30b22203ed, type: 3}
+  - {fileID: 8251433052648284495, guid: 7eaddec93737a904aa947d30b22203ed, type: 3}
   comidaAzar: {fileID: 0}
   newPosition: {x: 0, y: 0, z: 0}
   thrust: 8
@@ -656,8 +656,8 @@ Transform:
   m_GameObject: {fileID: 1243127091}
   serializedVersion: 2
   m_LocalRotation: {x: 0.52175426, y: -0, z: -0, w: 0.8530958}
-  m_LocalPosition: {x: 0, y: 0.07000005, z: 0.102}
-  m_LocalScale: {x: 0.05406412, y: 0.18385044, z: 0.054064117}
+  m_LocalPosition: {x: 0, y: 0.132, z: 0.224}
+  m_LocalScale: {x: 0.05406412, y: 0.3172707, z: 0.054064117}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1504923479}

@@ -42,6 +42,8 @@ public class comida : MonoBehaviour
     void CortarFruta()
     {
         //Se desactiva la fruta entera y se activan las mitades
+        mitades.transform.position = entera.transform.position;
+        mitades.transform.rotation = entera.transform.rotation;
         entera.SetActive(false);
         mitades.SetActive(true);
     }
