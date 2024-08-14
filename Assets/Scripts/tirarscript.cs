@@ -9,8 +9,8 @@ public class tirarscript : MonoBehaviour
 
 
 
-    private float Xmix = -1.31f;
-    private float Xmax = 1.31f;
+    private float Xmix = -2;
+    private float Xmax = 2;
 
 
     private float Zmix = 5;
