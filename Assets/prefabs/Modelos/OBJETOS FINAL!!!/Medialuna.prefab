@@ -124,13 +124,59 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5041078631823410658, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 378098612425858543}
+    - targetCorrespondingSourceObject: {fileID: 1770584840527205418, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6338367591711471778}
   m_SourcePrefab: {fileID: 100100000, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+--- !u!1 &946379886230110225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5041078631823410658, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+  m_PrefabInstance: {fileID: 5248863110700697075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &378098612425858543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946379886230110225}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687d9352d6f2af4478a644945272ddb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mitades: {fileID: 1005482554850184874, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+  entera: {fileID: 8717356543852379161, guid: 1b388517ac1283046a57a61372992d8b, type: 3}
+  puntajeC: 0
 --- !u!4 &2512990054110284211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7640455806703553600, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
   m_PrefabInstance: {fileID: 5248863110700697075}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5784263185643557337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1770584840527205418, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+  m_PrefabInstance: {fileID: 5248863110700697075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6338367591711471778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784263185643557337}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687d9352d6f2af4478a644945272ddb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mitades: {fileID: 1005482554850184874, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+  entera: {fileID: 8717356543852379161, guid: 1b388517ac1283046a57a61372992d8b, type: 3}
+  puntajeC: 0
 --- !u!1001 &6837884052036323188
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20,7 +20,8 @@ public class caidaScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "pisococina")
         {
-            Destroy(gameObject); 
+            Debug.Log("COLISION!");
+            //Destroy(gameObject); 
         } 
 
     }

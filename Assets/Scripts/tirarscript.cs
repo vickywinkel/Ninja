@@ -20,7 +20,7 @@ public class tirarscript : MonoBehaviour
     public Vector3 newPosition; //cordenadas prueba para instanciar 
 
 
-    float freq = 4;
+    float freq = 4.5f; //cada 4 segs salen los babys prefabs 
 
     public float thrust = 8;
     public float fuerza = 3; 
@@ -34,7 +34,7 @@ public class tirarscript : MonoBehaviour
         }
 
 
-        InvokeRepeating(nameof(GenerarRandom), 0, freq);
+        InvokeRepeating(nameof(GenerarRandom), 0, freq); // ESTO DSP SE USA PARA HACER LO D AL LLEGAR A TAL PUNTAJE, AUMENTAR LA VELOCIDAD
 
     }
 
@@ -70,6 +70,12 @@ public class tirarscript : MonoBehaviour
             rb.AddForce(thrust * Vector3.up, ForceMode.Impulse); // impulso el objeto hacia arriba
             rb.AddForce(fuerza * Vector3.back, ForceMode.Impulse); // impuso el objeto hacia atras, hacia donde estoy yo
         }
+
+    }
+
+   void InstanciarObjeto()
+    {
+
     }
 
 }

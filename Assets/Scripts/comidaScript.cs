@@ -7,7 +7,9 @@ public class comida : MonoBehaviour
     public GameObject mitades;
     public GameObject entera;
     
-    public int puntajeC; 
+    public int puntajeC;
+
+    private float tiempodestr = 3.5f; 
     
     // Start is called before the first frame update
     void Start()
@@ -27,8 +29,8 @@ public class comida : MonoBehaviour
     {
         if (collision.gameObject.tag == "piso")
         {
-            Destroy(gameObject);
-            Debug.Log("pisoo"); 
+            Debug.Log("pisoo");
+            DestruyoObjeto();
         }
         // Comprueba que la colisión es con el objeto deseado 
         if (collision.gameObject.tag == "GameController")
@@ -46,5 +48,10 @@ public class comida : MonoBehaviour
         mitades.transform.rotation = entera.transform.rotation;
         entera.SetActive(false);
         mitades.SetActive(true);
+    }
+
+    void DestruyoObjeto()
+    {
+        Destroy(gameObject, tiempodestr);
     }
 }
