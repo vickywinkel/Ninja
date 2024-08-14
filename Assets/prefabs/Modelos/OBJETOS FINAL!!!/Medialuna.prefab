@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687d9352d6f2af4478a644945272ddb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mitades: {fileID: 1005482554850184874, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
-  entera: {fileID: 8717356543852379161, guid: 1b388517ac1283046a57a61372992d8b, type: 3}
+  mitades: {fileID: 4981971018622241625}
+  entera: {fileID: 5918964116275477029}
   puntajeC: 0
 --- !u!1001 &5248863110700697075
 PrefabInstance:
@@ -155,6 +155,11 @@ MonoBehaviour:
 --- !u!4 &2512990054110284211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7640455806703553600, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
+  m_PrefabInstance: {fileID: 5248863110700697075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4981971018622241625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1005482554850184874, guid: c8aaa8864ba5df74fa56dd5d85f3e011, type: 3}
   m_PrefabInstance: {fileID: 5248863110700697075}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5784263185643557337 stripped

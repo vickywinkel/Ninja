@@ -13,8 +13,8 @@ public class tirarscript : MonoBehaviour
     private float Xmax = 2;
 
 
-    private float Zmix = 5;
-    private float Zmax = 6;
+    private float Zmix = 15;
+    private float Zmax = 14;
 
 
     public Vector3 newPosition; //cordenadas prueba para instanciar 
@@ -22,8 +22,8 @@ public class tirarscript : MonoBehaviour
 
     float freq = 4.5f; //cada 4 segs salen los babys prefabs 
 
-    public float thrust = 8;
-    public float fuerza = 3; 
+    public float thrust = 13;
+    public float fuerza = 5.5f; 
 
     // Start is called before the first frame update
     void Start()
@@ -72,10 +72,6 @@ public class tirarscript : MonoBehaviour
         }
 
     }
-
-   void InstanciarObjeto()
-    {
-
-    }
+ 
 
 }

@@ -29,25 +29,25 @@ public class comida : MonoBehaviour
     {
         if (collision.gameObject.tag == "piso")
         {
-            Debug.Log("pisoo");
             DestruyoObjeto();
+            Debug.Log("pisoo");
         }
         // Comprueba que la colisión es con el objeto deseado 
         if (collision.gameObject.tag == "GameController")
         {
-            Debug.Log("collision");
             CortarFruta();
+            Debug.Log("collision");
         }
     }
 
 
     void CortarFruta()
     {
-        //Se desactiva la fruta entera y se activan las mitades
-        mitades.transform.position = entera.transform.position;
-        mitades.transform.rotation = entera.transform.rotation;
-        entera.SetActive(false);
-        mitades.SetActive(true);
+            //Se desactiva la fruta entera y se activan las mitades
+            mitades.transform.position = entera.transform.position;
+            mitades.transform.rotation = entera.transform.rotation;
+            mitades.SetActive(true);
+            entera.SetActive(false);
     }
 
     void DestruyoObjeto()
