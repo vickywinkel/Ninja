@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class comida : MonoBehaviour
 {
@@ -25,11 +26,17 @@ public class comida : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             CortarFruta();
+            Debug.Log("collision");
+            if (gameObject.tag == "plato")
+            {
+                SceneManager.LoadScene("Perdiste");
+            }
+            else if (estaCortada == true)
+            {
+                gameManager.SumarPuntos(puntajeC);
+                estaCortada = false;
+            }
         }
-        //if (vida == 0)
-        //{
-          //  Debug.Log("Perdiste :(");
-        //}
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -55,7 +62,11 @@ public class comida : MonoBehaviour
             Debug.Log("collision");
             if (gameObject.tag == "plato")
             {
-                Debug.Log("perdiste");
+                SceneManager.LoadScene("Perdiste");
+            }
+            else if (estaCortada == true)
+            {
+                gameManager.SumarPuntos(puntajeC);
             }
         }
     }
@@ -68,8 +79,8 @@ public class comida : MonoBehaviour
             //mitades.transform.rotation = entera.transform.rotation;
             mitades.SetActive(true);
             entera.SetActive(false);
-            estaCortada = true;
-            gameManager.SumarPuntos(puntajeC);
+            estaCortada = true; 
+           // gameManager.SumarPuntos(puntajeC);
     }
 
     void DestruyoObjeto()
