@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitades: {fileID: 6397636108891919750}
   entera: {fileID: 6829239003565554464}
-  puntajeC: 0
+  puntajeC: 10
 --- !u!1001 &4776509203385584963
 PrefabInstance:
   m_ObjectHideFlags: 0
