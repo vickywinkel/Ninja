@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private int vidas = 3;
     private int puntos;
     private int mayorPuntaje;
+    public TextMeshProUGUI txt_puntos;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        txt_puntos.text = (puntos + " puntos");
     }
 
     public void PerderVida()

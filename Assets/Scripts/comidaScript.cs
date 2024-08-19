@@ -34,7 +34,6 @@ public class comida : MonoBehaviour
             else if (estaCortada == true)
             {
                 gameManager.SumarPuntos(puntajeC);
-                estaCortada = false;
             }
         }
     }

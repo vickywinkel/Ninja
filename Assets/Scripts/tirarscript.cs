@@ -23,18 +23,14 @@ public class tirarscript : MonoBehaviour
     float freq = 4.5f; //cada 4 segs salen los babys prefabs 
 
     public float thrust = 13;
-    public float fuerza = 5.5f; 
+    public float fuerza = 5.5f;
 
+    public float tiempoTotal = 3f;
+    private float tiempoActual = 0;
+    bool empezo = false;
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < comidas.Length; i++) //desactiva todos los objetos del array
-        {
-            comidas[i].SetActive(false);
-        }
-
-
-        InvokeRepeating(nameof(GenerarRandom), 0, freq); // ESTO DSP SE USA PARA HACER LO D AL LLEGAR A TAL PUNTAJE, AUMENTAR LA VELOCIDAD
 
     }
 
@@ -44,7 +40,22 @@ public class tirarscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (tiempoActual < tiempoTotal)
+        {
+            tiempoActual += Time.deltaTime; 
+        }
+        else if(!empezo)
+        {
+            empezo = true;
+            for (int i = 0; i < comidas.Length; i++) //desactiva todos los objetos del array
+            {
+                comidas[i].SetActive(false);
+            }
 
+        
+            InvokeRepeating(nameof(GenerarRandom), 0, freq); // ESTO DSP SE USA PARA HACER LO D AL LLEGAR A TAL PUNTAJE, AUMENTAR LA VELOCIDAD
+
+        }
 
     }
 
