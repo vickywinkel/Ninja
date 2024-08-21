@@ -14,11 +14,20 @@ public class GameManager : MonoBehaviour
     private int mayorPuntaje;
     public TextMeshProUGUI txt_puntos;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else //si instance es nulo, vacio
+        {
+            Instance = this; //yo soy instance --> este script
+        }
+
+        DontDestroyOnLoad(this); //para q esto se manetenga en tds las escenas 
     }
+
 
     // Update is called once per frame
     void Update()
@@ -34,7 +43,7 @@ public class GameManager : MonoBehaviour
         if (vidas == 0)
         {
             Debug.Log("Perdiste :(");
-            SceneManager.LoadScene("Perdiste"); 
+            ChangeScene("Perdiste"); 
         }
     } 
 
@@ -42,5 +51,10 @@ public class GameManager : MonoBehaviour
     {
         puntos += puntosGanados;
         Debug.Log("Puntos: " + puntos);
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
