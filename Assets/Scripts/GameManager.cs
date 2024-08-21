@@ -10,9 +10,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     private int vidas = 3;
-    private int puntos;
-    private int mayorPuntaje;
-    public TextMeshProUGUI txt_puntos;
+    public int puntos;
+    public int mayorPuntaje;
+    //public TextMeshProUGUI txt_puntos;
+    //public TextMeshProUGUI txt_mayorpuntaje;
 
     private void Awake()
     {
@@ -26,13 +27,19 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this); //para q esto se manetenga en tds las escenas 
+       
     }
+
 
 
     // Update is called once per frame
     void Update()
     {
-        txt_puntos.text = (puntos + " puntos");
+        //mayor puntaje
+        if (puntos > mayorPuntaje) 
+        {
+            mayorPuntaje = puntos;
+        }
     }
 
     public void PerderVida()
@@ -42,7 +49,6 @@ public class GameManager : MonoBehaviour
 
         if (vidas == 0)
         {
-            Debug.Log("Perdiste :(");
             ChangeScene("Perdiste"); 
         }
     } 
