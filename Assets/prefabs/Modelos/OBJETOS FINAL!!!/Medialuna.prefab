@@ -132,7 +132,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitades: {fileID: 5672770179296871484}
   entera: {fileID: 8480409644772987817}
-  puntajeC: 10
+  puntajeC: 0
+  radius: 8
+  power: 20
+  tiempoTotal: 1.5
+  cortastePlato: 0
 --- !u!1001 &3162248936384560205
 PrefabInstance:
   m_ObjectHideFlags: 0

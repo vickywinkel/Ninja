@@ -7,17 +7,27 @@ public class comida : MonoBehaviour
 {
     public GameObject mitades;
     public GameObject entera;
-    
+
     public int puntajeC;
 
     private float tiempodestr = 3.5f;
     private bool estaCortada = false;
     private GameManager gameManager;
 
+    public float radius = 8.0F;
+    public float power = 20.0F;
+
+    public float tiempoTotal = 1.5f;
+    private float tiempoActual = 0;
+    bool empezo = false;
+
+    public bool cortastePlato = false;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        tiempoTotal = 3f;
     }
 
     // Update is called once per frame
@@ -29,13 +39,30 @@ public class comida : MonoBehaviour
             Debug.Log("collision");
             if (gameObject.tag == "plato")
             {
-                SceneManager.LoadScene("Perdiste");
+                cortastePlato = true;
+
             }
             else if (estaCortada == true)
             {
                 gameManager.SumarPuntos(puntajeC);
+
             }
         }
+        if (cortastePlato)
+        {
+            if (tiempoActual < tiempoTotal)
+            {
+                tiempoActual += Time.deltaTime;
+                Debug.Log("Contando: " + tiempoActual);
+            }
+            else
+            {
+                Debug.Log("aca");
+                SceneManager.LoadScene("Perdiste");
+            }
+        }
+
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -48,7 +75,7 @@ public class comida : MonoBehaviour
                 if (gameObject.tag != "plato")
                 {
                     //vida = vida - 1;
-                    estaCortada = true; 
+                    estaCortada = true;
                     Debug.Log("perdiste una vida");
                     gameManager.PerderVida();
                 }
@@ -61,11 +88,20 @@ public class comida : MonoBehaviour
             Debug.Log("collision");
             if (gameObject.tag == "plato")
             {
-                SceneManager.LoadScene("Perdiste");
+                if (tiempoActual < tiempoTotal)
+                {
+                    tiempoActual += Time.deltaTime;
+                }
+                else if (!empezo)
+                {
+                    empezo = true;
+                    SceneManager.LoadScene("Perdiste");
+                }
             }
             else if (estaCortada == true)
             {
                 gameManager.SumarPuntos(puntajeC);
+
             }
         }
     }
@@ -73,13 +109,19 @@ public class comida : MonoBehaviour
 
     void CortarFruta()
     {
-            //Se desactiva la fruta entera y se activan las mitades
-            //mitades.transform.position = entera.transform.position;
-            //mitades.transform.rotation = entera.transform.rotation;
-            mitades.SetActive(true);
-            entera.SetActive(false);
-            estaCortada = true; 
-           // gameManager.SumarPuntos(puntajeC);
+
+        mitades.SetActive(true);
+        entera.SetActive(false);
+        estaCortada = true;
+        Vector3 explosionPos = transform.position;
+        Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
+        foreach (Collider hit in colliders)
+        {
+            Rigidbody rb = hit.GetComponent<Rigidbody>();
+
+            if (rb != null)
+                rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
+        }
     }
 
     void DestruyoObjeto()

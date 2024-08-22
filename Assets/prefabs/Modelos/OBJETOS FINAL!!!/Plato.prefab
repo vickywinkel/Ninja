@@ -100,6 +100,10 @@ MonoBehaviour:
   mitades: {fileID: 5599247036722368615}
   entera: {fileID: 1859305621743028237}
   puntajeC: 0
+  radius: 8
+  power: 20
+  tiempoTotal: 1.5
+  cortastePlato: 0
 --- !u!1 &5599247036722368615
 GameObject:
   m_ObjectHideFlags: 0
