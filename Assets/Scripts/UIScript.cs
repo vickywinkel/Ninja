@@ -19,7 +19,15 @@ public class menuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txt_puntos.text = GameManager.Instance.puntos.ToString();
+        if (txt_puntos)
+        {
+            txt_puntos.text = GameManager.Instance.puntos.ToString();
+        }
+        if (txt_mayorpuntaje)
+        {
+            txt_mayorpuntaje.text = GameManager.Instance.mayorPuntaje.ToString();
+        }
+       
     }
 
     public void empezarJuego()
