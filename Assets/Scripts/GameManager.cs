@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    private int vidas = 3;
+    public int vidas = 3;
     public int puntos;
     public int mayorPuntaje;
     //public TextMeshProUGUI txt_puntos;
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         if (vidas == 0)
         {
-            ChangeScene("Perdiste"); 
+            ChangeScene("Perdiste");
         }
     } 
 

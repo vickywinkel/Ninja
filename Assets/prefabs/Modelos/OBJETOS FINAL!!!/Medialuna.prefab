@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6812289867832286804}
   - component: {fileID: 116562190412706420}
   - component: {fileID: 8597908909624885144}
+  - component: {fileID: 3263777870719647349}
   m_Layer: 0
   m_Name: Medialuna
   m_TagString: Untagged
@@ -132,11 +133,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitades: {fileID: 5672770179296871484}
   entera: {fileID: 8480409644772987817}
-  puntajeC: 0
+  puntajeC: 5
+  estaCortada: 0
   radius: 8
-  power: 20
-  tiempoTotal: 1.5
+  power: 500
   cortastePlato: 0
+--- !u!114 &3263777870719647349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065485857961836311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae96700a9ad075479fe43f4794a6467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoTotal: 1.5
 --- !u!1001 &3162248936384560205
 PrefabInstance:
   m_ObjectHideFlags: 0

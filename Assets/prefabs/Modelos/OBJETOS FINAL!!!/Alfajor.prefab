@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1270107609997350092}
   - component: {fileID: 1817979733853537380}
   - component: {fileID: 825593709458284944}
+  - component: {fileID: -6350513163494250905}
   m_Layer: 0
   m_Name: Alfajor
   m_TagString: Untagged
@@ -132,11 +133,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mitades: {fileID: 6397636108891919750}
   entera: {fileID: 6829239003565554464}
-  puntajeC: 0
+  puntajeC: 10
+  estaCortada: 0
   radius: 8
-  power: 20
-  tiempoTotal: 1.5
+  power: 500
   cortastePlato: 0
+--- !u!114 &-6350513163494250905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003705609051755961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae96700a9ad075479fe43f4794a6467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoTotal: 1.5
 --- !u!1001 &4776509203385584963
 PrefabInstance:
   m_ObjectHideFlags: 0
