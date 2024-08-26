@@ -21,7 +21,7 @@ public class menuScript : MonoBehaviour
     {
         if (txt_puntos)
         {
-            txt_puntos.text = GameManager.Instance.puntos.ToString();
+            txt_puntos.text = ("Puntos: " + GameManager.Instance.puntos.ToString());
         }
         if (txt_mayorpuntaje)
         {

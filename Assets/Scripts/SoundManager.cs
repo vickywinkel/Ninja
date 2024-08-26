@@ -6,7 +6,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
     public AudioSource source;
-
+    public AudioClip cortar; 
 
     private void Awake()
     {
@@ -26,8 +26,8 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySound(AudioClip clip)
     {
-        source.Stop();
-        source.loop = false;
+        //source.Stop();
+        //source.loop = false;
         source.PlayOneShot(clip);
     }
 }

@@ -18,6 +18,8 @@ public class comida : MonoBehaviour
 
     public bool cortastePlato = false;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,10 +69,17 @@ public class comida : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
+
+                // Aumentar la componente de velocidad en el eje X
+                Vector3 velocity = rb.velocity;
+                velocity.x *= 200f;  // Ajusta este valor para incrementar la fuerza en X
+                rb.velocity = velocity;
+
                 Debug.Log("Aplica fuerza");
             }
 
         }
+        SoundManager.Instance.PlaySound(SoundManager.Instance.cortar);
     }
 
     void DestruyoObjeto()

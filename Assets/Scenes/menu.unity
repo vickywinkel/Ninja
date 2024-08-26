@@ -922,6 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+  cortar: {fileID: 8300000, guid: 6ea85af0e3234a54392106f46f308525, type: 3}
 --- !u!4 &983948027
 Transform:
   m_ObjectHideFlags: 0
@@ -1353,6 +1354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017657c941ceec2418d7b44d306062e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidas: 3
   puntos: 0
   mayorPuntaje: 0
 --- !u!4 &1450230338
