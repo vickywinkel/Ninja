@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class espadaScript : MonoBehaviour
 {
     public float tiempoTotal = 1.5f;
-    private float tiempoActual = 0;
+    public float tiempoActual = 0;
     bool empezo = false;
 
     // Start is called before the first frame update
@@ -29,22 +29,23 @@ public class espadaScript : MonoBehaviour
         {
             comidaScript.CortarFruta();
             Debug.Log("collision");
-            if (gameObject.tag == "plato")
-            {
-                if (tiempoActual < tiempoTotal)
-                {
-                    tiempoActual += Time.deltaTime;
-                }
-                else if (!empezo)
-                {
-                    empezo = true;
-                    SceneManager.LoadScene("Perdiste");
-                }
-            }
-            else if (comidaScript.estaCortada == true)
+            if (comidaScript.estaCortada == true)
             {
                 GameManager.Instance.SumarPuntos(comidaScript.puntajeC);
             }
         }
+        if (collision.gameObject.tag == "plato")
+        {
+            comidaScript.CortarFruta();
+            Debug.Log("collision");
+
+            StartCoroutine(Cuentaregresiva()); 
+        }
+    }
+
+    IEnumerator Cuentaregresiva()
+    {
+        yield return new WaitForSeconds(tiempoTotal);
+        SceneManager.LoadScene("Perdiste");
     }
 }

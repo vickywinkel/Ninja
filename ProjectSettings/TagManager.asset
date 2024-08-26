@@ -7,6 +7,7 @@ TagManager:
   - piso
   - pisococina
   - plato
+  - Comida
   layers:
   - Default
   - TransparentFX

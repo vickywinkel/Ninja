@@ -8,6 +8,7 @@ public class menuScript : MonoBehaviour
 {
     public TextMeshProUGUI txt_puntos;
     public TextMeshProUGUI txt_mayorpuntaje;
+    public TextMeshProUGUI txt_vidas;
 
 
     // Start is called before the first frame update
@@ -26,6 +27,10 @@ public class menuScript : MonoBehaviour
         if (txt_mayorpuntaje)
         {
             txt_mayorpuntaje.text = GameManager.Instance.mayorPuntaje.ToString();
+        }
+        if (txt_vidas)
+        {
+            txt_vidas.text = GameManager.Instance.vidas.ToString();
         }
        
     }
