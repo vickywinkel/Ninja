@@ -8,10 +8,8 @@ public class tirarscript : MonoBehaviour
     public GameObject comidaAzar;
 
 
-
     private float Xmix = -2;
     private float Xmax = 2;
-
 
     private float Zmix = 15;
     private float Zmax = 14;
@@ -27,7 +25,7 @@ public class tirarscript : MonoBehaviour
 
     public float tiempoTotal = 3f;
     private float tiempoActual = 0;
-    bool empezo = false;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -35,28 +33,17 @@ public class tirarscript : MonoBehaviour
     }
 
 
-
-
     // Update is called once per frame
     void Update()
     {
-        if (tiempoActual < tiempoTotal)
-        {
-            tiempoActual += Time.deltaTime; 
-        }
-        else if(!empezo)
-        {
-            empezo = true;
-            for (int i = 0; i < comidas.Length; i++) //desactiva todos los objetos del array
-            {
-                comidas[i].SetActive(false);
-            }
 
-        
+        CuentaReg cuenta = gameObject.GetComponent<CuentaReg>();
+        if (cuenta.empezoC == true)
+        {
             InvokeRepeating(nameof(GenerarRandom), 0, freq); // ESTO DSP SE USA PARA HACER LO D AL LLEGAR A TAL PUNTAJE, AUMENTAR LA VELOCIDAD
-
+            cuenta.empezoC = false;
         }
-
+   
     }
 
     void GenerarRandom() //funcion para q aparezca un objeto random
