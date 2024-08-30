@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntoDisparoTR: {fileID: 193097553}
-  thrust: 13
+  thrust: 10
   fuerza: 5.5
 --- !u!4 &193097553
 Transform:
@@ -387,7 +387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &360386910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -754,6 +754,7 @@ GameObject:
   - component: {fileID: 470295686}
   - component: {fileID: 470295685}
   - component: {fileID: 470295687}
+  - component: {fileID: 470295688}
   m_Layer: 0
   m_Name: CONTROLLER
   m_TagString: Untagged
@@ -815,6 +816,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt_countdown: {fileID: 1641638310}
   empezoC: 0
+--- !u!114 &470295688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470295684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ef0c4b744c781489743681a9ad5d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tirarscript: {fileID: 0}
+  usado: 1
 --- !u!1 &646219919
 GameObject:
   m_ObjectHideFlags: 0
