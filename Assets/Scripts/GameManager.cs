@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
     public int puntos;
     public int mayorPuntaje;
 
-    public GameObject todasLasVidas;
-    public GameObject dosVidas;
-    public GameObject unavida;
+   // public GameObject todasLasVidas;
+    //public GameObject dosVidas;
+    //public GameObject unavida;
 
     int contadorCor = 0;
     //public TextMeshProUGUI txt_puntos;
@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     {
         vidas--; 
         Debug.Log("Vidas restantes: " + vidas);
+        /*
         if (vidas == 3)
         {
             todasLasVidas.SetActive(true);
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
             dosVidas.SetActive(false);
             unavida.SetActive(true);
         }
+        */
         if (vidas == 0)
         {
             ChangeScene("Perdiste");
