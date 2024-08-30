@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3223876232365270466}
   m_Layer: 0
   m_Name: Medialuna 1
-  m_TagString: Untagged
+  m_TagString: Comida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
