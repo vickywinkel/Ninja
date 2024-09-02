@@ -9,23 +9,15 @@ public class tirarscript : MonoBehaviour
 
     public PuntoDisparo[] puntosDisparo;
 
-    private float Xmix = -2;
-    private float Xmax = 2;
-
-    private float Zmix = 15;
-    private float Zmax = 14;
-
-
-    public Vector3 newPosition; //cordenadas prueba para instanciar 
-
-
-    float freq = 4.5f; //cada 4 segs salen los babys prefabs 
+    public float freq = 4.5f; //cada 4 segs salen los babys prefabs 
 
     public float thrust = 13;
     public float fuerza = 5.5f;
 
     public float tiempoTotal = 3f;
     private float tiempoActual = 0;
+
+    public bool listo = false;
    
     // Start is called before the first frame update
     void Start()
@@ -37,12 +29,31 @@ public class tirarscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         CuentaReg cuenta = gameObject.GetComponent<CuentaReg>();
         if (cuenta.empezoC == true)
         {
+            freq = 4; 
             InvokeRepeating(nameof(DispararDeUnPuntoAlAzar), 0, freq); // ESTO DSP SE USA PARA HACER LO D AL LLEGAR A TAL PUNTAJE, AUMENTAR LA VELOCIDAD
+            Debug.Log("freq = 3");
             cuenta.empezoC = false;
+        }
+
+        if (GameManager.Instance.puntos >= 100 && listo == true)
+        {
+            CancelInvoke(nameof(DispararDeUnPuntoAlAzar));
+            freq = 2f;
+            Debug.Log("freq = 1");
+            InvokeRepeating(nameof(DispararDeUnPuntoAlAzar), 0, freq);
+            listo = false;
+        }
+
+        else if (GameManager.Instance.puntos >= 20 && GameManager.Instance.puntos < 100 && listo == false)
+        {
+            CancelInvoke(nameof(DispararDeUnPuntoAlAzar));
+            freq = 3f;
+            Debug.Log("freq = 2");
+            InvokeRepeating(nameof(DispararDeUnPuntoAlAzar), 0, freq);
+            listo = true;
         }
    
     }
