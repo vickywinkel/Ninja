@@ -1219,9 +1219,6 @@ MonoBehaviour:
   vidas: 3
   puntos: 0
   mayorPuntaje: 0
-  todasLasVidas: {fileID: 2075878561135148353, guid: bf36755de5a24534aa2d9efcb482e0d8, type: 3}
-  dosVidas: {fileID: 2728769069859798133, guid: 59786a42162c669438c9bfb79284fb01, type: 3}
-  unavida: {fileID: 8955685131707470345, guid: a626b381efc89bd479171cc3921630e7, type: 3}
 --- !u!4 &1450230338
 Transform:
   m_ObjectHideFlags: 0
