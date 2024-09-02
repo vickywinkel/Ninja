@@ -1531,13 +1531,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3918565035655708103, guid: c60ffcd9b0e6a4e40afa99a697555e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4641625006363951946, guid: c60ffcd9b0e6a4e40afa99a697555e4a, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 8375006897912722516, guid: c60ffcd9b0e6a4e40afa99a697555e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8541408419190882493, guid: c60ffcd9b0e6a4e40afa99a697555e4a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599473616292817728, guid: c60ffcd9b0e6a4e40afa99a697555e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
