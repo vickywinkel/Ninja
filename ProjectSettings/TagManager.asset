@@ -8,6 +8,9 @@ TagManager:
   - pisococina
   - plato
   - Comida
+  - Anchor
+  - jugar
+  - creditos
   layers:
   - Default
   - TransparentFX

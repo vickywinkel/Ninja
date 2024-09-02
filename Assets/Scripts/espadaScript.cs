@@ -41,6 +41,7 @@ public class espadaScript : MonoBehaviour
 
             StartCoroutine(Cuentaregresiva()); 
         }
+       
     }
 
     IEnumerator Cuentaregresiva()
