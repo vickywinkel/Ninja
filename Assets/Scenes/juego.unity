@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f540fb88d7952984d87c64965f2058b9, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -304,13 +304,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299639867}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5127297, y: 0.032160226, z: 0.30354965, w: 0.8024535}
-  m_LocalPosition: {x: 0.16, y: 5.54, z: -0.51}
+  m_LocalRotation: {x: 0.1969671, y: -0.010752454, z: 0.22706476, w: 0.9536928}
+  m_LocalPosition: {x: -0.61, y: 6.29, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 53.452, y: 37.546, z: 60.865}
+  m_LocalEulerAnglesHint: {x: 22.369, y: 4.275, z: 27.63}
 --- !u!114 &299639870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,6 +602,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380178372}
   m_CullTransparentMesh: 1
+--- !u!1 &443044139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6298846008536446355, guid: 1badc8ca3f6afb9409dee1740d211c15, type: 3}
+  m_PrefabInstance: {fileID: 1993067649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &443044141
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443044139}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fce18225bf416214f9debf7e1df3656a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &470295684
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +662,8 @@ MonoBehaviour:
   comidas:
   - {fileID: 6979225378196516985, guid: 4aff4bc798bb7f8489d7aab5f7e0eba2, type: 3}
   - {fileID: 5351498939036051071, guid: 927aa17daf805654f9c083cfc63b70cd, type: 3}
-  - {fileID: 2528710342915997433, guid: babfc10539f7aef459791eacb584acc3, type: 3}
   - {fileID: 6256515416105059461, guid: a9154a4f12f0b8648a04d892de264d1a, type: 3}
+  - {fileID: 2528710342915997433, guid: babfc10539f7aef459791eacb584acc3, type: 3}
   comidaAzar: {fileID: 0}
   puntosDisparo:
   - {fileID: 193097552}
@@ -1516,7 +1542,7 @@ Transform:
   m_GameObject: {fileID: 1629117847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14086844, y: 11.585182, z: -4.4291825}
+  m_LocalPosition: {x: 6, y: -6.2, z: 1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1721,10 +1747,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cocina 4_9 PROTOTIPO 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2429632824210359402, guid: 1badc8ca3f6afb9409dee1740d211c15, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495664264620900117, guid: 1badc8ca3f6afb9409dee1740d211c15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -6298846008536446355, guid: 1badc8ca3f6afb9409dee1740d211c15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443044141}
     - targetCorrespondingSourceObject: {fileID: -9042664591573481800, guid: 1badc8ca3f6afb9409dee1740d211c15, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1464420235}
