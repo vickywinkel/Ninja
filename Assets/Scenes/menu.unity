@@ -689,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &434486531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &561113619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   cortarComida: {fileID: 8300000, guid: 6ea85af0e3234a54392106f46f308525, type: 3}
-  cortarPlato: {fileID: 8300000, guid: 619974c8de1ecc044a0456bbd2256ab5, type: 3}
+  cortarPlato: {fileID: 8300000, guid: b3470b5ea1620cc47a8376c5e743e154, type: 3}
 --- !u!4 &983948027
 Transform:
   m_ObjectHideFlags: 0

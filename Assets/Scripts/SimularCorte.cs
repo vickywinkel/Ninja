@@ -22,13 +22,14 @@ public class SimularCorte : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             comidaScript.CortarFruta();
-            SoundManager.Instance.PlaySound(SoundManager.Instance.cortarComida);
             if (gameObject.tag == "plato")
             {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.cortarPlato);
                 cortastePlato = true;
             }
             else if (comidaScript.estaCortada == true)
             {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.cortarComida);
                 GameManager.Instance.SumarPuntos(comidaScript.puntajeC);
             }            
         }
