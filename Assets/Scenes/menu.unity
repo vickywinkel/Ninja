@@ -940,7 +940,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d8dfb3dddd3a6bd408a71903a698a202, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.72
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -984,7 +984,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.01
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1037,7 +1037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
-  cortar: {fileID: 8300000, guid: 6ea85af0e3234a54392106f46f308525, type: 3}
+  cortarComida: {fileID: 8300000, guid: 6ea85af0e3234a54392106f46f308525, type: 3}
+  cortarPlato: {fileID: 8300000, guid: 619974c8de1ecc044a0456bbd2256ab5, type: 3}
 --- !u!4 &983948027
 Transform:
   m_ObjectHideFlags: 0

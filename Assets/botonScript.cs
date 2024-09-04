@@ -30,6 +30,12 @@ public class botonScript : MonoBehaviour
             //SceneManager.LoadScene("creditos");
             GameManager.Instance.ChangeScene("creditos");
             Debug.Log("colison");
+        } 
+        if (gameObject.tag == "volvermenu")
+        {
+            //SceneManager.LoadScene("creditos");
+            GameManager.Instance.ChangeScene("menu");
+            Debug.Log("colison");
         }
     }
 }
