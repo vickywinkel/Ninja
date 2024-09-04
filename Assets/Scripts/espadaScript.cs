@@ -29,13 +29,15 @@ public class espadaScript : MonoBehaviour
         {
             comidaScript.CortarFruta();
             Debug.Log("collision");
+            SoundManager.Instance.PlaySound(SoundManager.Instance.cortarComida);
             if (comidaScript.estaCortada == true)
             {
-                GameManager.Instance.SumarPuntos(comidaScript.puntajeC);
-            }
+                GameManager.Instance.SumarPuntos(comidaScript.puntajeC);}
+        
         }
         if (collision.gameObject.tag == "plato")
         {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.cortarPlato);
             comidaScript.CortarFruta();
             Debug.Log("collision");
 
