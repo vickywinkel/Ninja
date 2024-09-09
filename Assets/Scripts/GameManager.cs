@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     int contadorCor = 0;
     //public TextMeshProUGUI txt_puntos;
     //public TextMeshProUGUI txt_mayorpuntaje;
-
+   
     private void Awake()
     {
         if (Instance != null && Instance != this)

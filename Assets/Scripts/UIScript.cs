@@ -38,7 +38,7 @@ public class menuScript : MonoBehaviour
     public void empezarJuego()
     {
         SceneManager.LoadScene("juego");
-        GameManager.Instance.puntos = 0; 
+        GameManager.Instance.puntos = 110; 
         GameManager.Instance.vidas = 3; 
     }
 

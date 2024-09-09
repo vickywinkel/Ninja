@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3460784261297841789
 Transform:
   m_ObjectHideFlags: 0
@@ -133,11 +133,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mitades: {fileID: 2415630687965920111}
-  entera: {fileID: 0}
+  entera: {fileID: 6014931628967478199}
   puntajeC: 10
   estaCortada: 0
   radius: 8
-  power: 20
+  power: 1500
   cortastePlato: 0
 --- !u!114 &6527639128954961089
 MonoBehaviour:
@@ -609,7 +609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6084edb59ee3314fa1dc996a3b8f6d5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

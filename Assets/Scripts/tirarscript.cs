@@ -10,6 +10,7 @@ public class tirarscript : MonoBehaviour
     public PuntoDisparo[] puntosDisparo;
 
     public float freq = 4.5f; //cada 4 segs salen los babys prefabs 
+    public float freq2; 
 
     public float thrust = 13;
     public float fuerza = 5.5f;
@@ -37,8 +38,16 @@ public class tirarscript : MonoBehaviour
             Debug.Log("freq = 3");
             cuenta.empezoC = false;
         }
+        if (GameManager.Instance.puntos >= 120 && listo == false)
+        {
+            Debug.Log("hola");
+           // InvokeRepeating(nameof(DispararDeUnPuntoAlAzar), 0, freq);
+            freq2 = 1.5f;
+            InvokeRepeating(nameof(DispararDeUnPuntoAlAzar), 0, freq2);
+            listo = true;
+        }
 
-        if (GameManager.Instance.puntos >= 100 && listo == true)
+        else if (GameManager.Instance.puntos >= 100 && GameManager.Instance.puntos < 120 && listo == true)
         {
             CancelInvoke(nameof(DispararDeUnPuntoAlAzar));
             freq = 2f;

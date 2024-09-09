@@ -502,7 +502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251, y: 276}
+  m_AnchoredPosition: {x: -226, y: 233}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380178374
@@ -552,8 +552,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -664,13 +664,14 @@ MonoBehaviour:
   - {fileID: 5351498939036051071, guid: 927aa17daf805654f9c083cfc63b70cd, type: 3}
   - {fileID: 6256515416105059461, guid: a9154a4f12f0b8648a04d892de264d1a, type: 3}
   - {fileID: 2528710342915997433, guid: babfc10539f7aef459791eacb584acc3, type: 3}
-  - {fileID: 6256515416105059461, guid: 60d1a1dec70b1e6469ae9c95718f69cd, type: 3}
+  - {fileID: 215910629932065564, guid: 787bb35cf1f57bf49b5a54ec69e9c674, type: 3}
   comidaAzar: {fileID: 0}
   puntosDisparo:
   - {fileID: 193097552}
   - {fileID: 785451308}
   - {fileID: 1339831745}
   freq: 4.5
+  freq2: 0
   thrust: 13
   fuerza: 5.5
   tiempoTotal: 3
@@ -1128,8 +1129,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249617917}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.010000706, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2014,8 +2015,8 @@ SceneRoots:
   - {fileID: 756192408}
   - {fileID: 2092139010}
   - {fileID: 470295686}
-  - {fileID: 1249617921}
   - {fileID: 193097553}
+  - {fileID: 1249617921}
   - {fileID: 667781739}
   - {fileID: 785451309}
   - {fileID: 1339831746}

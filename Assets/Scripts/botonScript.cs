@@ -22,7 +22,7 @@ public class botonScript : MonoBehaviour
             Debug.Log("colison");
             GameManager.Instance.ChangeScene("juego");
            // SceneManager.LoadScene("juego");
-            GameManager.Instance.puntos = 0;
+            GameManager.Instance.puntos = 100;
             GameManager.Instance.vidas = 3;
         }
         if (gameObject.tag == "creditos")

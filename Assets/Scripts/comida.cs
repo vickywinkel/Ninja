@@ -79,7 +79,7 @@ public class comida : MonoBehaviour
             }
 
         }
-        //SoundManager.Instance.PlaySound(SoundManager.Instance.cortar);
+        
     }
 
     void DestruyoObjeto()
