@@ -52,26 +52,6 @@ public class GameManager : MonoBehaviour
     {
         vidas--; 
         Debug.Log("Vidas restantes: " + vidas);
-        /*
-        if (vidas == 3)
-        {
-            todasLasVidas.SetActive(true);
-            dosVidas.SetActive(false);
-            unavida.SetActive(false);
-        }
-        if (vidas == 2)
-        {
-            todasLasVidas.SetActive(false);
-            dosVidas.SetActive(true);
-            unavida.SetActive(false);
-        }
-        if (vidas == 1)
-        {
-            todasLasVidas.SetActive(false);
-            dosVidas.SetActive(false);
-            unavida.SetActive(true);
-        }
-        */
         if (vidas == 0)
         {
             ChangeScene("Perdiste");
