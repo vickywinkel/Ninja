@@ -1039,6 +1039,7 @@ MonoBehaviour:
   source: {fileID: 0}
   cortarComida: {fileID: 8300000, guid: 6ea85af0e3234a54392106f46f308525, type: 3}
   cortarPlato: {fileID: 8300000, guid: b3470b5ea1620cc47a8376c5e743e154, type: 3}
+  nuevaComida: {fileID: 8300000, guid: 4656a1e8758f00644bd50e4b740b0da4, type: 3}
 --- !u!4 &983948027
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource source;
     public AudioClip cortarComida; 
     public AudioClip cortarPlato; 
+    public AudioClip nuevaComida; 
 
     private void Awake()
     {

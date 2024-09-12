@@ -542,7 +542,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1725713141}
         m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: empezarJuego
         m_Mode: 1
@@ -1587,8 +1587,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1427051747}
-  - {fileID: 1062405715}
   - {fileID: 1725713142}
+  - {fileID: 1062405715}
   - {fileID: 1600529098}
   - {fileID: 654033591}
   - {fileID: 969907192}

@@ -71,6 +71,8 @@ public class tirarscript : MonoBehaviour
     {
         int nroAlAzar = Random.Range(0,puntosDisparo.Length);
         puntosDisparo[nroAlAzar].Disparar(GenerarRandom());
+        SoundManager.Instance.PlaySound(SoundManager.Instance.nuevaComida);
+        
     }
 
     GameObject GenerarRandom() //funcion para q aparezca un objeto random
