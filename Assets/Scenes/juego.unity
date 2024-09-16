@@ -908,8 +908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntoDisparoTR: {fileID: 785451309}
-  thrust: 13
-  fuerza: 5.5
+  thrust: 10
+  fuerza: 8
 --- !u!4 &785451309
 Transform:
   m_ObjectHideFlags: 0
