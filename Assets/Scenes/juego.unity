@@ -154,7 +154,8 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 193097553}
   thrust: 6
   fuerza: 9.5
-  id: cajonArriba
+  animScript: {fileID: 0}
+  demoraDisparo: 0
 --- !u!4 &193097553
 Transform:
   m_ObjectHideFlags: 0
@@ -818,7 +819,8 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 667781739}
   thrust: 9
   fuerza: 13
-  id: cajonAbajo
+  animScript: {fileID: 0}
+  demoraDisparo: 0
 --- !u!4 &667781739
 Transform:
   m_ObjectHideFlags: 0
@@ -912,7 +914,8 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 785451309}
   thrust: 10
   fuerza: 8
-  id: heladera
+  animScript: {fileID: 1975383066}
+  demoraDisparo: 0.2
 --- !u!4 &785451309
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,7 +1255,8 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 1339831746}
   thrust: 7.5
   fuerza: 12.8
-  id: horno
+  animScript: {fileID: 0}
+  demoraDisparo: 0
 --- !u!4 &1339831746
 Transform:
   m_ObjectHideFlags: 0

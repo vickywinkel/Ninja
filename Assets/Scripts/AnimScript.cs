@@ -12,13 +12,20 @@ public class AnimScript : MonoBehaviour
         puntodisparoScript = FindObjectOfType<PuntoDisparo>();
     }
 
+
+    public void AnimacionAbrir()
+    {
+        anim.SetTrigger("Abrir");
+
+    }
+
+    public void AnimacionCerrar()
+    {
+        anim.SetTrigger("Cerrar");
+    }
     // Update is called once per frame
     void Update()
     {
-        if (puntodisparoScript.id == "heladera")
-        {
-            Debug.Log("hola");
-            anim.SetBool("seTiroHeladera", true);
-        }
+        
     }
 }

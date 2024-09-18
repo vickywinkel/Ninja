@@ -8,7 +8,8 @@ public class PuntoDisparo : MonoBehaviour
     public float thrust;
     public float fuerza;
 
-    public string id; 
+    public AnimScript animScript;
+    public float demoraDisparo; 
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,19 @@ public class PuntoDisparo : MonoBehaviour
 
     public void Disparar(GameObject comidaAzar)
     {
+        StartCoroutine(AbrirDisparCerrar(comidaAzar));
+    }
+
+    IEnumerator AbrirDisparCerrar(GameObject comidaAzar)
+    {
+        animScript.AnimacionAbrir();
+        yield return new WaitForSeconds(demoraDisparo);
+        LanzarComida(comidaAzar);
+        animScript.AnimacionCerrar();
+    }
+
+    void LanzarComida(GameObject comidaAzar)
+    {
         GameObject clon = Instantiate(comidaAzar, puntoDisparoTR.position, Quaternion.identity); // instanto el prefab
         clon.SetActive(true);
 
@@ -35,6 +49,6 @@ public class PuntoDisparo : MonoBehaviour
             rb.AddForce(thrust * puntoDisparoTR.up, ForceMode.Impulse); // impulso el objeto hacia arriba
             rb.AddForce(fuerza * -puntoDisparoTR.forward, ForceMode.Impulse); // impuso el objeto hacia atras, hacia donde estoy yo
         }
-        Debug.Log("disparo desde " + id);
+
     }
 }
