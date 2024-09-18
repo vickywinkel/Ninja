@@ -8,6 +8,8 @@ public class PuntoDisparo : MonoBehaviour
     public float thrust;
     public float fuerza;
 
+    public string id; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +35,6 @@ public class PuntoDisparo : MonoBehaviour
             rb.AddForce(thrust * puntoDisparoTR.up, ForceMode.Impulse); // impulso el objeto hacia arriba
             rb.AddForce(fuerza * -puntoDisparoTR.forward, ForceMode.Impulse); // impuso el objeto hacia atras, hacia donde estoy yo
         }
+        Debug.Log("disparo desde " + id);
     }
 }
