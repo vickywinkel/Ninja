@@ -154,8 +154,8 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 193097553}
   thrust: 6
   fuerza: 9.5
-  animScript: {fileID: 0}
-  demoraDisparo: 0
+  animScript: {fileID: 636298057621318474}
+  demoraDisparo: 0.2
 --- !u!4 &193097553
 Transform:
   m_ObjectHideFlags: 0
@@ -882,7 +882,7 @@ MonoBehaviour:
   puntoDisparoTR: {fileID: 667781739}
   thrust: 9
   fuerza: 13
-  animScript: {fileID: 0}
+  animScript: {fileID: 636298057621318474}
   demoraDisparo: 0
 --- !u!4 &667781739
 Transform:
@@ -1728,7 +1728,13 @@ PrefabInstance:
     - {fileID: -4904213096872728516, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
     - {fileID: -4190645458061105831, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636298057621318475}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 636298057621318474}
   m_SourcePrefab: {fileID: 100100000, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
 --- !u!1001 &1853453631
 PrefabInstance:
@@ -2022,6 +2028,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &261003284963815923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 475200367000b5a42b83ad36f33669ea, type: 3}
+  m_PrefabInstance: {fileID: 1723860934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &636298057621318474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261003284963815923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f4b03b7fcbfa149b3f6f9f02ba59dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  puntodisparoScript: {fileID: 193097552}
+--- !u!95 &636298057621318475
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261003284963815923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5f7f2fa9ab2fbd46a9033cbe5d3dedc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1085998080500026528
 PrefabInstance:
   m_ObjectHideFlags: 0
