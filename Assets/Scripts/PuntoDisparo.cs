@@ -48,6 +48,8 @@ public class PuntoDisparo : MonoBehaviour
             // Aplicar fuerza al Rigidbody
             rb.AddForce(thrust * puntoDisparoTR.up, ForceMode.Impulse); // impulso el objeto hacia arriba
             rb.AddForce(fuerza * -puntoDisparoTR.forward, ForceMode.Impulse); // impuso el objeto hacia atras, hacia donde estoy yo
+            rb.AddTorque(Vector3.up * 5f);
+            rb.AddTorque(Vector3.forward * 5f);
         }
 
     }

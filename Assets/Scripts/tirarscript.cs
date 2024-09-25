@@ -85,6 +85,5 @@ public class tirarscript : MonoBehaviour
     {
         int azar = Random.Range(0, comidas.Length);
         return comidaAzar = comidas[azar];
-
     }
 }
