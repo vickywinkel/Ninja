@@ -1197,6 +1197,78 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1580782534601142713, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.403
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580782534601142713, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747440934213419100, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440345365487562326, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627990700737679052, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743559442285634124, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743559442285634124, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743559442285634124, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_StartingInteractionOverridesMap.Array.data[0].groupMember
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743559442285634124, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_StartingInteractionOverridesMap.Array.data[0].overrideGroupMembers.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826250906676607617, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899973373206948058, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020148625722577203, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393896094885415634, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393896094885415634, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393896094885415634, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.163
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369805221758640650, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369805221758640650, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_AimTargetObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420251279179728604, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5986290291920329564, guid: 870b2342bb611a34a9499a0589982447, type: 3}
       propertyPath: m_Name
       value: BIEN - XR Origin (XR Rig) 1
@@ -1241,8 +1313,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8701163863212338366, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_RayInteractors.Array.data[3].m_Interactor
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738101649701190955, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_NearFarInteractor
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738101649701190955, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+      propertyPath: m_TeleportInteractor
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4020148625722577203, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+    - {fileID: 5420251279179728604, guid: 870b2342bb611a34a9499a0589982447, type: 3}
+    - {fileID: 3440345365487562326, guid: 870b2342bb611a34a9499a0589982447, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 870b2342bb611a34a9499a0589982447, type: 3}
