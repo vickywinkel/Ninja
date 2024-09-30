@@ -23,7 +23,8 @@ public class botonScript : MonoBehaviour
             GameManager.Instance.ChangeScene("juego");
            // SceneManager.LoadScene("juego");
             GameManager.Instance.puntos = 0;
-            GameManager.Instance.vidas = 1000; 
+            GameManager.Instance.vidas = 3; 
+
         }
         if (gameObject.tag == "creditos")
         {
